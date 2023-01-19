@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-bg"></div>
+      <div class="main-logo">
+        <a href="/Finals/first-page/index.html"
+          ><img width="60px" class="mt-2" src="./svg/white-logo.svg" alt=""
+        /></a>
+      </div>
+      <div class="links mt-7">
+        <div class="">
+          <a class="inline-links vg-1" href=""
+            ><img src="./svg/curse-white-logo.svg" alt="" />
+            <p style="padding-left: 5px">Все курсы</p></a
+          >
+        </div>
+        <div>
+          <a class="inline-links vg-1" href=""> <p>Мероприятия</p> </a>
+        </div>
+        <div>
+          <a class="inline-links vg-1" href=""> <p>Базы знаний</p> </a>
+        </div>
+        <div>
+          <a class="inline-links vg-1" href=""> <p>Карьера</p> </a>
+        </div>
+        <div style="padding-left: 60px; display: flex">
+          <img width="15px" src="./svg/location-white-logo.svg" alt="" />
+          <div class="dropdown">
+            <input
+              type="text"
+              class="text02"
+              readonly
+              placeholder="Выберите свой город"
+            />
+            <div class="option">
+              <div onmouseover="show('Нижний Новгород')">
+                <p class="mt-5">Нижний Новгород</p>
+              </div>
+              <div onmouseover="show('Дзержинск')">
+                <p class="mt-5">Дзержинск</p>
+              </div>
+              <div onmouseover="show('On-line')">
+                <p class="mt-5 mb-5">On-line</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="inline-links vg-1" href=""> <p>8 800 950-33-98</p> </a>
+        </div>
+        <div>
+          <a class="inline-links vg-1" href="">
+            <img src="./svg/login-white-logo.svg" alt="" />
+            <p style="padding-left: 5px">Войти</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="headder-container">
+        <p class="headder mt-10">Все программы обучения</p>
+      </div>
+      <div class="side-content">
+        <div class="side-content-container">
+          <div>
+            <div class="level-container">
+              <p class="level mb-5">Уровень сложности</p>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Новичок</span>
+                <input type="radio" name="sample" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Пользователь</span>
+                <input type="radio" name="sample" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Профессионал</span>
+                <input type="radio" name="sample" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Читер</span>
+                <input type="radio" name="sample" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="secondary-line"></div>
+          <div>
+            <div style="padding-top: 15px" class="level-container">
+              <p class="level mb-5">Тип обучения</p>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Любой</span>
+                <input type="radio" name="type" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Профессия</span>
+                <input type="radio" name="type" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-flex">
+              <label class="custom-radio-btn">
+                <span class="label">Курс</span>
+                <input type="radio" name="type" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="secondary-line"></div>
+          <div>
+            <p class="duration mb-5">Длительность</p>
+            <div class="wrapper">
+              <div class="duration-desc">
+                <span> от</span>
+                <span id="range1">от 1 </span>
+                <span> до </span>
+                <span id="range2"> 24 </span> <span>месяцев</span>
+              </div>
+              <div class="container">
+                <div class="slider-track"></div>
+                <input
+                  type="range"
+                  min="1"
+                  max="24"
+                  value="0"
+                  id="slider-1"
+                  oninput="slideOne()"
+                />
+                <input
+                  type="range"
+                  min="1"
+                  max="24"
+                  value="100"
+                  id="slider-2"
+                  oninput="slideTwo()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="banner-container">
+            <div class="banner">
+              <p class="banner-txt">
+                Баннер <br />
+                280x400
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-container">
+        <div class="group">
+          <div class="children">
+            <div class="children-icon">
+              <a href=""><img src="./svg/children (2).svg" alt="" /></a>
+            </div>
+            <div class="children-description">
+              <p class="children-name">Дети</p>
+              <p class="children-age">8 — 14 лет</p>
+            </div>
+          </div>
+          <div class="teen">
+            <div class="teen-icon">
+              <a href=""><img src="./svg/teens.svg" alt="" /></a>
+            </div>
+            <div class="teen-description">
+              <p class="teen-name">Подростки</p>
+              <p class="teen-age">14 — 18 лет</p>
+            </div>
+          </div>
+          <div class="family">
+            <div class="family-icon">
+              <a href=""><img src="./svg/family (1).svg" alt="" /></a>
+            </div>
+            <div class="family-description">
+              <p class="family-name">Взрослые</p>
+              <p class="family-age">8 — ∞ лет</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-line-container mt-2">
+          <img src="./svg/Vector 182 (1).svg" alt="" />
+        </div>
+        <div class="group-underline"></div>
+        <div class="act-btns">
+          <div>
+            <p class="btn-headder">Направление</p>
+          </div>
+          <button class="act-button">Роботехника</button>
+          <button class="act-button secondary-btn">Создание игр</button>
+          <button class="act-button secondary-btn">Web-разработка</button>
+          <button class="act-button secondary-btn">Мультимедиа</button>
+          <div class="second-row-btn">
+            <a class="act-button-chess" href="/Finals/third-page/index.html"
+              ><button class="act-button">Шахматы</button></a
+            >
+            <button class="act-button secondary-btn">
+              3D-моделирование и дизайн
+            </button>
+            <button class="act-button secondary-btn">Английский язык</button>
+          </div>
+          <button class="act-button">Блогинг</button>
+          <button class="act-button secondary-btn">Soft skills</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-flex">
+          <div>
+            <div class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #ffe38e" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #b8efcf" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #c5ddff" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #ffeef6" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="background-color: #ffce94" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #ddddff" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #c7eeff" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #ffe9a8" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+            <div style="background-color: #ddddff" class="card">
+              <p class="program-name">Программа</p>
+              <div class="icon-flex">
+                <img class="card-icon" src="./svg/Group 815.svg" alt="" />
+                <p class="card-headder">
+                  «Разработка мобильных <br />
+                  приложений»
+                </p>
+              </div>
+              <div>
+                <p class="card-desc">
+                  Разработчик мобильных приложений создаёт <br />
+                  приложения, которыми люди ежедневно пользуются <br />
+                  на смартфонах, умных часах и планшетах.
+                </p>
+              </div>
+              <div>
+                <p class="time-duration">24 месяца</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-footer-message">
+        <div>
+          <img class="footer-owl" src="./svg/Сова-01 2 (1).svg" alt="" />
+        </div>
+        <div class="help-msg-bg"></div>
+        <div>
+          <img
+            class="footer-message-txt"
+            src="./svg/Помочь с выбором_ Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения. (1).svg"
+            alt=""
+          />
+          <img class="footer-message-bg" src="./svg/Union (3).svg" alt="" />
+        </div>
+        <div class="name-input-container">
+          <input class="name-input" type="text" placeholder="Ваше имя" />
+        </div>
+        <div class="second-input">
+          <div class="tel-input-container">
+            <input class="tel-input" type="text" placeholder="Ваш телефон" />
+          </div>
+          <div class="mail-input-container">
+            <input class="mail-input" type="text" placeholder="Ваш e-mail" />
+          </div>
+        </div>
+        <div class="send-btn-container">
+          <button class="send-btn bg-orange-400">Отправить</button>
+        </div>
+        <div class="privacy-container">
+          <p class="privacy-txt">
+            Нажимая на кнопку, я соглашаюсь <br />
+            на обработку персональных <br />
+            данных и с правилами <br />
+            пользования Платформой
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-bg"></div>
+      <div class="footer-first-block">
+        <div>
+          <img class="footer-logo" src="./svg/Group 802 (1).svg" alt="" />
+        </div>
+        <div>
+          <p class="tel-number">8 800 950-33-98</p>
+        </div>
+        <div>
+          <p class="adress">г. Москва, ул. Ленина, д. 50</p>
+        </div>
+        <div>
+          <p class="mail">info@hodfutureacademy.ru</p>
+        </div>
+        <div>
+          <div class="messenger-icons">
+            <div class="vk-icon">
+              <a href=""><img src="./svg/vk.svg" alt="" /></a>
+            </div>
+            <div class="inst-icon after">
+              <a href=""><img src="./svg/inst.svg" alt="" /></a>
+            </div>
+            <div class="fb-icon after">
+              <a href=""><img src="./svg/fbook.svg" alt="" /></a>
+            </div>
+            <div class="yt-icon after">
+              <a href=""><img src="./svg/yt.svg" alt="" /></a>
+            </div>
+
+            <div class="tg-icon after">
+              <a href=""><img src="./svg/ (2).svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="autor">© ХОД, Future Academy</p>
+        </div>
+      </div>
+      <div class="footer-flex">
+        <div class="footer-second-block">
+          <div class="second-block-name">
+            <p>Детям</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Роботехника</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Создание игр</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Программирование</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Мультимедия</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Soft skills</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Шахматы</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Блогинг</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Создание игр</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Программирование</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Мультимедия</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Soft skills</p>
+          </div>
+        </div>
+        <div class="footer-third-block">
+          <div class="third-block-name">
+            <p>Подросткам</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Web-разработка</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Прикладное программирование</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Графическое моделирование</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Game Development</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Soft skills</p>
+          </div>
+          <div>
+            <p class="second-block-desc">
+              Разработчик мобильных <br />
+              приложений
+            </p>
+          </div>
+          <div>
+            <p class="second-block-desc">Блогинг</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Создание игр</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Программирование</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Мультимедия</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Soft skills</p>
+          </div>
+        </div>
+        <div class="footer-fourth-block">
+          <div class="fourth-block-name">
+            <p>Взрослым</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Разработчик игр на Unity</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Разработка ПО</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Графический Дизайн</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Тестировщик ПО</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Интернет Маркетинг</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Java-разработчик</p>
+          </div>
+          <div>
+            <p class="second-block-desc">Python–разработчик</p>
+          </div>
+          <div>
+            <p class="second-block-desc">IOS-разработчик</p>
+          </div>
+        </div>
+        <div class="footer-fifth-block">
+          <div class="fifth-block-name">
+            <p>Информация</p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">Об академии</a></p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">Мероприятия</a></p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">Новости</a></p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">База знаний</a></p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">Карьера</a></p>
+          </div>
+          <div>
+            <p><a class="second-block-desc" href="">Контакты</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

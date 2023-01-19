@@ -1,0 +1,1084 @@
+
+
+body{
+    background-color: #f0f0f0;
+
+}
+
+
+
+/* nav */
+.main-logo{
+    margin-top: 15px;
+    padding-left: 10rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.vg-1{
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown{
+    margin-left: 10px;
+    padding-top: 40px;
+    position: relative;
+
+    width: 200px;
+    height: 0px;
+}
+
+.dropdown::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    top: 20px;
+    right: 28px;
+    height: 2px;
+    background: #555;
+    z-index: 10;
+    transform: rotate(40deg);
+    transition: 0.5s;
+}
+
+.dropdown.active::before{
+    right: 20px;
+}
+
+.dropdown::after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    top: 20px;
+    right: 20px;
+    height: 2px;
+    background: #555;
+    z-index: 10;
+    transform: rotate(-40deg);
+    transition: 0.5s;
+}
+
+.dropdown.active::after{
+    right: 28px;
+}
+
+
+.dropdown input{
+    text-decoration: underline;
+    font-family: mart;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+.dropdown .option{
+    z-index: 1;
+    font-family: mart;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: #F6F7F9;
+    box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s;
+}
+
+.dropdown.active .option{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown .option div{
+    margin: 0;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+
+
+.nav-bg{
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.links{
+    display: flex;
+}
+
+.inline-links{
+    font-family: Mart;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+}
+
+/* nav - end */
+
+@font-face {
+    font-family: 'Mart';
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf); 
+}
+
+@font-face {
+    font-family: 'martBold';
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'martSemiBold';
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+
+/* main - container */
+
+.main-foto{
+margin-left: 40rem;
+  position: absolute;
+  height: 100%;
+  width: 500px;
+}
+
+.main-container{
+    height: 400px;
+}
+
+.main-foto-bg{
+    background-color: #00093C;
+    position: absolute;
+width: 100%;
+height: 460px;
+left: 0px;
+z-index: -3;
+}
+
+.main-headder-txt{
+    margin: 0;
+    font-family: martBold;
+    color: white;
+    font-size: 36px;
+}
+
+.secondary-headder-txt{
+    padding-top: 5px;
+    margin: 0;
+    font-family: mart;
+    color: white;
+    font-size: 18px;
+}
+
+.time-duration-flex{
+    padding-top: 25px;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.time-duration-line{
+    margin: 0;
+position: absolute;
+width: 100px;
+height: 2px;
+background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+}
+
+.time-duration-line2{
+    margin: 0;
+    position: absolute;
+width: 260px;
+height: 2px;
+background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+}
+
+.time-duration-txt{
+    padding-right: 35px;
+    padding-top: 5px;
+    margin: 0;
+    font-family: mart;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.cost-line{
+    position: absolute;
+width: 215px;
+height: 2px;
+background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+}
+
+.cost-txt{
+    padding-top: 5px;
+    margin: 0;
+    color: white;
+    font-family: martSemiBold;
+    font-size: 22px;
+}
+
+.free-lesson-txt{
+    padding-top: 35px;
+    margin: 0;
+    color: white;
+    font-family: martSemiBold;
+    font-size: 22px;
+}
+
+.free-lesson-desc{
+    padding-top: 10px;
+    margin: 0;
+    color: white;
+    font-family: mart;
+    font-size: 12px;
+}
+
+.sign-up-btn{
+    margin-top: 45px;
+    background-color: #F7941D;
+    position: absolute;
+    color: white;
+    font-family: martSemiBold;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: #F7941D;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-desc{
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 9rem
+}
+
+.line-vector{
+    position: absolute;
+    margin-top: 18rem;
+}
+
+.chess-horse-vector{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+.second-line-vector{
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 25rem;
+}
+
+.third-line-vector{
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 25rem;
+}
+
+.triangle-vector{
+    position: absolute;
+    margin-left: 45rem;
+    margin-top: 2rem;
+}
+
+.second-triangle-vector{
+    position: absolute;
+    margin-left: 74rem;
+    margin-top: 5rem;
+}
+
+.vector-o{
+    position: absolute;
+    margin-top: 18rem;
+    margin-left: 42rem;
+}
+
+.vector-x{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 9rem
+}
+
+.last-line{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 23rem;
+}
+
+/* content */
+
+.content{
+    padding-top: 5rem;
+}
+
+.message-bg{
+    position: absolute;
+    z-index: -1;
+}
+
+.message-container{
+    padding-left:40px;
+}
+
+.message-txt{
+    padding-top: 35px;
+    padding-left: 20px;
+    
+}
+
+.owl-message{
+    padding-top: 5rem;
+    padding-left: 6rem;
+    position: absolute;
+    height: 500px;
+}
+
+.message-owl{
+    position: absolute;
+    padding-top: 10px;
+}
+
+.goal{
+    padding-top: 10px;
+    margin: 0;
+    font-family: martBold;
+    font-size: 22px;
+}
+
+.goal-desc{
+    line-height: 20px;
+    padding-top: 10px;
+    margin: 0;
+    font-family: mart;
+    font-size: 14px;
+}
+
+.goal-flex{
+    padding-top: 5rem;
+    padding-left: 30.5rem;
+    display: flex;
+}
+
+.goal-block{
+    padding-left: 35px;
+}
+
+/* video */
+.video{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.darkness{
+    background-color: #00093C;
+    width: 700px;
+    max-height: 391px;
+    height: 391px;
+    border-radius: 20px;
+    position: absolute;
+    filter: opacity(0.6);
+}
+
+.play-btn{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.play-btn-container{
+    position: absolute;
+    padding-top: 11%;
+    z-index: 1;
+}
+
+.video-triangle{
+    position: absolute;
+    padding-top: 5rem;
+    padding-left: 13rem;
+    z-index: -1;
+}
+
+.video-vector184{
+    position: absolute;
+    padding-top: 5rem;
+    padding-left: 57rem;
+    z-index: -1;
+}
+
+.video-vector183{
+    position: absolute;
+    padding-top: 25rem;
+    padding-left: 5rem;
+    z-index: -1;
+}
+
+.video-x-vector{
+    position: absolute;
+    padding-top: 25rem;
+    padding-left: 58rem;
+    z-index: -1;
+}
+
+.video-content{
+    padding-top: 4rem;
+    height: 600px;
+}
+
+.quote{
+    margin: 0;
+    font-family: martBold;
+    font-size: 36px;
+    padding-left: 8rem;
+    padding-top: 3rem;
+}
+
+.quote-desc{
+    font-family:mart; 
+    display: flex;
+    padding-left: 8rem;
+    padding-top: 10px;
+    line-height: 26px;
+}
+
+
+.quote-icons-flex{
+    padding-top: 2rem;
+    padding-left: 8rem;
+    display: flex;
+    font-family: mart;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.icon-block{
+    margin-left: 4rem;
+}
+
+.subtract-bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+}
+
+
+.subtract-txt-flex{
+    display: flex;
+    padding-top: 5rem
+}
+
+.subtract-txt{
+    padding-left: 10rem;
+    color: white;
+    font-family: mart;
+    line-height: 26px;
+}
+
+.sign-up-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.subtract-container{
+    padding-top: 5rem;
+    height: 350px;
+}
+
+.academy-header{
+    padding-top: 8rem;
+    padding-left: 8rem;
+    font-family: martBold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.academy-header-desc{
+    margin: 0;
+    font-family: mart;
+    padding-left: 8rem;
+    padding-top: 1.5rem;
+    line-height: 26px;
+}
+
+.container {
+    left: 0;
+    padding-top: 45px;
+    display: flex;
+    overflow-x: hidden;
+    
+
+}
+
+.img-comments{
+    margin-left: 17px;
+}
+
+.comments-line{
+    position: absolute;
+    background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+    width: 700px;
+    height: 4px;
+    margin-top: 30px;
+}
+
+.line-flex{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.course-content-header{
+    font-family: martBold;
+    font-size: 30px;
+    padding-left: 8rem;
+    margin: 0;
+}
+
+.course-content{
+    padding-top: 7rem;
+}
+
+.course-content-desc{
+    font-family: mart;
+    padding-left: 8rem;
+    line-height: 26px;
+}
+
+.course-duration-txt{
+    font-family: martSemiBold;
+    font-size: 12px;
+}
+
+.course-cost-txt{
+    padding-top: 10px;
+    color: black;
+    font-family: martBold;
+    font-size: 26px;
+}
+
+.second{
+    padding-left: 2rem
+}
+
+.course-line-second{
+    margin-left: 2rem;
+}
+
+.course-time-cost{
+    padding-left: 8rem;
+    height: 400px;
+}
+
+.castle-vector{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 4rem;
+}
+
+.elephant-vector{
+    margin-left: 71rem;
+    margin-top: 5rem;
+    position: absolute;
+}
+
+.horse-vector{
+    margin-left: 65rem;
+    margin-top: 14rem;
+    position: absolute;
+}
+
+.queen-vector{
+    margin-left: 71rem;
+    margin-top: 14rem;
+    position: absolute;
+}
+
+.corse-message-bg{
+    position: absolute;
+    z-index: -1;
+}
+
+.corse-message-txt{
+    position: absolute;
+    margin-top: 2.8rem;
+    margin-left: 2rem;
+}
+
+.corse-message-owl{
+    position: absolute;
+    margin-left: 23rem;
+    margin-top: 3rem;
+}
+
+.course-message{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 40rem;
+}
+
+.teachers-bg{
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #00093C;
+    width: 100%;
+    height: 600px;
+    z-index: -2;
+}
+
+.img-bg{
+    position: absolute;
+}
+
+.img-flex{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-card{
+    width: 280px;
+    height: 330px;
+    background: white;
+    border-radius: 20px;
+}
+
+.teachers{
+    padding-top: 2.5rem;
+    color: white;
+    position: absolute;
+    font-family: martsemibold;
+    padding-top: rem;
+    font-size: 30px;
+    padding-left: 35%;
+}
+
+.our-teachers{
+    margin-top: 5rem;
+    height: 600px;
+}
+
+.teachers-cards-flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 11rem;
+}
+
+
+.teacher-name{
+    padding-top: 4rem;
+    font-family: martBold;
+    text-align: center;
+}
+
+.teacher-desc{
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-family: mart;
+}
+
+.teacher-card-secondary{
+    margin-left: 1rem;
+}
+
+.teacher-img{
+    position: absolute;
+}
+
+.box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.4);
+}
+
+.teachers-vector-x{
+    margin-top: 7rem;
+    margin-left: 2rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.teachers-bottom-line{
+    position: absolute;
+    margin-top: 27rem;
+    left: 0;
+    z-index: -1;
+}
+
+.teachers-triangle-vector{
+    position: absolute;
+    z-index: -1;
+    padding-left: 43rem;
+    margin-top: 30rem;
+}
+
+.teachers-vector-o{
+    padding-top: 27rem;
+    padding-left: 75rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.teachers-right-line{
+    padding-top: 5rem;
+    padding-left: 55rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.txt-drop-down-content{
+    padding-top: 3rem;
+    padding-left: 8rem;
+}
+
+
+.find-answer-header{
+    font-family: martBold;
+    font-size: 30px;
+}
+
+.question-block{
+    position: relative;
+    border-radius: 6px;
+    font-family: martSemiBold;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+
+.details{
+    font-family: mart;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-bottom: 25px;
+    display: none;
+}
+
+.question-container{
+    width: 70rem;
+}
+
+.question-box {
+
+  width: 95%;
+  background: white;
+  border-radius: 6px;
+}
+
+.question-box::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 89%;
+  background: linear-gradient(90deg, #F7941D, #27AAE1);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.8;
+}
+
+.question-txt{
+    margin-left: 25px;
+}
+
+.open-container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.question-header{
+    font-family: martBold;
+    font-size: 30px;
+}
+
+.question-sector{
+    padding-left: 8rem;
+    padding-top: 5rem;
+}
+
+.question-vector-o{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-left: 45px;
+    margin-top: 9rem;
+}
+
+.question-vector-triangle{
+    position: absolute;
+    margin-left: 63rem;
+    margin-top: 2rem;
+    z-index: -1;
+}
+
+.question-vector-x{
+    position: absolute;
+    z-index: -1;
+    padding-left: 63rem;
+    padding-top: 24rem;
+}
+
+.footer{
+    padding-top: 25rem;
+    display: flex;
+}
+
+.footer-bg{
+    width: 100%;
+    height: 600px;
+    background-color: #00093C;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    right: 0;
+}
+
+.after{
+    padding-left: 25px;
+}
+
+.messenger-icons{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-first-block{
+    padding-top: 9rem;
+    padding-left: 5rem;
+    color: #ffffff;
+    font-family: mart;
+}
+
+.adress{
+    padding-bottom: 5px;
+}
+
+.tel-number{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    
+}
+
+.autor{
+    color:#BDBDBD;
+    font-size: 12px;
+}
+
+.footer-second-block{
+    padding-top: 6rem;
+    padding-left: 4rem;
+    color: white;
+    font-family: mart;
+    font-size: 14px;
+}
+
+.second-block-name{
+    font-family: martBold;
+    font-size: 16px;
+}
+
+.second-block-desc{
+    margin: 0;
+    padding-top: 18px;
+}
+
+.footer-third-block{
+    padding-top: 6rem;
+    padding-left: 4rem;
+    color: white;
+    font-family: mart;
+    font-size: 14px;
+}
+
+.third-block-name{
+    font-family: martBold;
+    font-size: 16px;
+}
+
+.footer-fourth-block{
+    padding-top: 6rem;
+    padding-left: 4rem;
+    color: white;
+    font-family: mart;
+    font-size: 14px;
+}
+
+.fourth-block-name{
+    font-family: martBold;
+    font-size: 16px;
+}
+
+.footer-fifth-block{
+    padding-top: 6rem;
+    padding-left: 4rem;
+    color: white;
+    font-family: mart;
+    font-size: 14px;
+}
+
+.fifth-block-name{
+    font-family: martBold;
+    font-size: 16px;
+}
+
+.footer-flex{
+    display: flex;
+}
+
+.link-info{
+    color: white;
+}
+
+.second-block-desc{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-owl{
+    position: absolute;
+    left: 0;
+    padding-left: 9.5rem;
+    padding-top: 1.5rem;
+}
+
+.footer-message-bg{
+    position: absolute;
+    padding-left: 12rem;
+    padding-top: 3rem;
+    width: 370px;
+}
+
+.footer-message-txt{
+    position: absolute;
+    padding-left: 15rem;
+    padding-top: 4rem;
+    width: 300px;
+    z-index: 2;
+}
+
+
+.help-msg-bg{
+    position: absolute;
+width: 1000px;
+height: 270px;
+z-index: -1;
+background: #FFFFFF;
+border-radius: 20px;
+
+
+}
+
+.full-footer-message{
+    position: absolute;
+    padding-left: 15rem;
+    padding-top: 11rem;
+}
+
+.name-input{
+    font-size: 14px;
+    font-family: mart;
+    position: absolute;
+    margin-left: 36.5rem;
+    padding-left: 13px;
+    margin-top: 3rem;
+    width: 360px;
+    height: 50px;
+    background-color: #00093C1A;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+.tel-input{
+    font-size: 14px;
+    font-family: mart;
+    position: absolute;
+    background-color: #00093C1A;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+}
+
+.mail-input{
+    font-family: mart;
+    font-size: 14px;
+    position: absolute;
+    background-color: #00093C1A;
+    padding-left: 15px;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin-left: 11.9rem;
+}
+
+.second-input{
+    padding-top: 7rem;
+    display: flex;
+    margin-left: 36.5rem;
+}
+
+.send-btn{
+    background-color: orange;
+    position: absolute;
+    color: white;
+    font-family: martSemiBold;
+    height: 50px;
+    width: 184px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    filter: opacity(100%);
+    cursor: pointer;
+}
+
+.send-btn-container{
+    padding-top: 4.5rem;
+    padding-left: 48.4rem;
+}
+
+.privacy-container{
+    top: 0;
+    padding-left: 36.5rem;
+}
+
+.privacy-txt{
+    margin: 0;
+    position: absolute;
+    font-family: mart;
+    font-size: 10px;
+}
